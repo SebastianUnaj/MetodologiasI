@@ -1,0 +1,6 @@
+C:\Users\Sebastian Cacere\Document\metodologia\metod-1\clase 2\Metod-TP2-cacere\PRACTICA2\practica2\obj\Debug\practica2.csprojResolveAssemblyReference.cache
+C:\Users\Sebastian Cacere\Document\metodologia\metod-1\clase 2\Metod-TP2-cacere\PRACTICA2\practica2\bin\Debug\practica2.exe.config
+C:\Users\Sebastian Cacere\Document\metodologia\metod-1\clase 2\Metod-TP2-cacere\PRACTICA2\practica2\bin\Debug\practica2.exe
+C:\Users\Sebastian Cacere\Document\metodologia\metod-1\clase 2\Metod-TP2-cacere\PRACTICA2\practica2\bin\Debug\practica2.pdb
+C:\Users\Sebastian Cacere\Document\metodologia\metod-1\clase 2\Metod-TP2-cacere\PRACTICA2\practica2\obj\Debug\practica2.exe
+C:\Users\Sebastian Cacere\Document\metodologia\metod-1\clase 2\Metod-TP2-cacere\PRACTICA2\practica2\obj\Debug\practica2.pdb

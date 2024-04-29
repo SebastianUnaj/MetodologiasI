@@ -1,0 +1,12 @@
+C:\Users\Sebastian Cacere\Document\metodologia\metod-1\clase 1\Metod-TP1-cacere\practica2\bin\Debug\TP2.exe.config
+C:\Users\Sebastian Cacere\Document\metodologia\metod-1\clase 1\Metod-TP1-cacere\practica2\bin\Debug\TP2.exe
+C:\Users\Sebastian Cacere\Document\metodologia\metod-1\clase 1\Metod-TP1-cacere\practica2\bin\Debug\TP2.pdb
+C:\Users\Sebastian Cacere\Document\metodologia\metod-1\clase 1\Metod-TP1-cacere\practica2\obj\Debug\TP2.csprojResolveAssemblyReference.cache
+C:\Users\Sebastian Cacere\Document\metodologia\metod-1\clase 1\Metod-TP1-cacere\practica2\obj\Debug\TP2.exe
+C:\Users\Sebastian Cacere\Document\metodologia\metod-1\clase 1\Metod-TP1-cacere\practica2\obj\Debug\TP2.pdb
+C:\Users\Sebastian Cacere\Document\metodologia\metod-1\clase 1\Metod-TP1-cacere\TP2\bin\Debug\TP2.exe.config
+C:\Users\Sebastian Cacere\Document\metodologia\metod-1\clase 1\Metod-TP1-cacere\TP2\bin\Debug\TP2.exe
+C:\Users\Sebastian Cacere\Document\metodologia\metod-1\clase 1\Metod-TP1-cacere\TP2\bin\Debug\TP2.pdb
+C:\Users\Sebastian Cacere\Document\metodologia\metod-1\clase 1\Metod-TP1-cacere\TP2\obj\Debug\TP2.csprojResolveAssemblyReference.cache
+C:\Users\Sebastian Cacere\Document\metodologia\metod-1\clase 1\Metod-TP1-cacere\TP2\obj\Debug\TP2.exe
+C:\Users\Sebastian Cacere\Document\metodologia\metod-1\clase 1\Metod-TP1-cacere\TP2\obj\Debug\TP2.pdb
