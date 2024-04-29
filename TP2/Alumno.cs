@@ -114,13 +114,13 @@ namespace practica2
 			return mayor;
 		}//fin sosMayor
 		public bool sosMenor(comparable c){
-			return comparar.sosIgual(c, this);
+			return comparar.sosMenor(c, this);
 		}//fin soloMenor
 		public bool sosMayor(comparable c){
-			return comparar.sosMenor(c, this);
+			return comparar.sosMayor(c, this);
 		}//fin soloMayor
 		public bool sosIgual(comparable c){
-			return comparar.sosMayor(c, this);
+			return comparar.sosIgual(c, this);
 		}//fin sosIgual
 		
 	}

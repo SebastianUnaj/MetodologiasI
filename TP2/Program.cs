@@ -15,7 +15,7 @@ namespace practica2
 		public static void Main(string[] args)
 		{
 			Alumno a1= new Alumno("al"+1,23111222, 11222, 0.7);
-			Alumno a2= new Alumno("al"+1,23111222, 11222, 0.7);
+			Alumno a2= new Alumno("al"+1,3111222, 1222, 0.7);
 			
 			Console.WriteLine("Nombre DNI LEGAJO PROMEDIO:");
 			Console.WriteLine(a1.getNombre+" "+a1.getDni+" "+a1.getLegajo+" "+a1.getPromedio);
