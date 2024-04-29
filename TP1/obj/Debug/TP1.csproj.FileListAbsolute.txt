@@ -1,0 +1,12 @@
+C:\Users\arauj\OneDrive\Documentos\SharpDevelop Projects\Metodologia-TP1\TP1\obj\Debug\TP1.csprojResolveAssemblyReference.cache
+C:\Users\arauj\OneDrive\Documentos\SharpDevelop Projects\Metodologia-TP1\TP1\bin\Debug\TP1.exe.config
+C:\Users\arauj\OneDrive\Documentos\SharpDevelop Projects\Metodologia-TP1\TP1\bin\Debug\TP1.exe
+C:\Users\arauj\OneDrive\Documentos\SharpDevelop Projects\Metodologia-TP1\TP1\bin\Debug\TP1.pdb
+C:\Users\arauj\OneDrive\Documentos\SharpDevelop Projects\Metodologia-TP1\TP1\obj\Debug\TP1.exe
+C:\Users\arauj\OneDrive\Documentos\SharpDevelop Projects\Metodologia-TP1\TP1\obj\Debug\TP1.pdb
+C:\Users\Sebastian Cacere\Document\metodologia\metod-1\clase 1\Metod-TP1-cacere\TP1\obj\Debug\TP1.csprojResolveAssemblyReference.cache
+C:\Users\Sebastian Cacere\Document\metodologia\metod-1\clase 1\Metod-TP1-cacere\TP1\obj\Debug\TP1.exe
+C:\Users\Sebastian Cacere\Document\metodologia\metod-1\clase 1\Metod-TP1-cacere\TP1\bin\Debug\TP1.exe.config
+C:\Users\Sebastian Cacere\Document\metodologia\metod-1\clase 1\Metod-TP1-cacere\TP1\bin\Debug\TP1.exe
+C:\Users\Sebastian Cacere\Document\metodologia\metod-1\clase 1\Metod-TP1-cacere\TP1\bin\Debug\TP1.pdb
+C:\Users\Sebastian Cacere\Document\metodologia\metod-1\clase 1\Metod-TP1-cacere\TP1\obj\Debug\TP1.pdb
