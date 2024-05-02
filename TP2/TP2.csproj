@@ -49,10 +49,13 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Alumno.cs" />
+    <Compile Include="ClaveValor.cs" />
     <Compile Include="Cola.cs" />
     <Compile Include="coleccionable.cs" />
     <Compile Include="ColeccionMultiple.cs" />
     <Compile Include="comparable.cs" />
+    <Compile Include="Conjunto.cs" />
+    <Compile Include="Diccionario.cs" />
     <Compile Include="Estrategias.cs" />
     <Compile Include="IPersona.cs" />
     <Compile Include="Numero.cs" />

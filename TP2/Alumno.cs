@@ -63,21 +63,24 @@ namespace practica2
 		
 		public bool soloIgual(comparable c){
 			bool igual=false;
-			Console.WriteLine("l:legajo o p:promedio");
-			string opcion= Console.ReadLine();
-			do {
-				if (opcion=="l"){
-					igual= ((Alumno)c).legajo==this.getLegajo;
-					return igual;
-				}
-				if (opcion=="p"){
-					igual=((Alumno)c).promedio==this.getPromedio;
-					return igual;
-				}
+			string[] partes= c.GetType().ToString().Split(new char[]{'.'});
+				if (partes[1]=="Alumno") {
 				Console.WriteLine("l:legajo o p:promedio");
-				opcion= Console.ReadLine();
-				
-			}while (opcion!="l" || opcion!="p");
+				string opcion= Console.ReadLine();
+				do {
+					if (opcion=="l"){
+						igual= ((Alumno)c).legajo==this.getLegajo;
+						return igual;
+					}
+					if (opcion=="p"){
+						igual=((Alumno)c).promedio==this.getPromedio;
+						return igual;
+					}
+					Console.WriteLine("l:legajo o p:promedio");
+					opcion= Console.ReadLine();
+					
+				}while (opcion!="l" || opcion!="p");
+			}
 			return igual;
 		}//fin sosIgual
 		

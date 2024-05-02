@@ -14,7 +14,9 @@ namespace practica2
 	{
 		public static void Main(string[] args)
 		{
+			
 			Alumno a1= new Alumno("al"+1,23111222, 11222, 0.7);
+			/*
 			Alumno a2= new Alumno("al"+1,3111222, 1222, 0.7);
 			
 			Console.WriteLine("Nombre DNI LEGAJO PROMEDIO:");
@@ -44,7 +46,7 @@ namespace practica2
 			Console.WriteLine("\tSos menor: "+a1.sosMenor(a2));
 			Console.WriteLine("\tSos mayor: "+a1.sosMayor(a2));
 			
-			//************EJERCICIO 2*****************/
+			//************EJERCICIO 2*****************
 			
 			//coleccion multiple de Alumnos
 			
@@ -59,6 +61,40 @@ namespace practica2
 			Console.WriteLine("tipo coleccion multiple: "+ cM2.GetType().ToString());
 			informar(cM2);
 			
+			*/
+			
+			//crear varias clave valor
+			Console.WriteLine("Ejercicio 4- Practica2");
+			RandomUnico r= new RandomUnico(unicoRandomGlobal);
+			int nvalor= r.legajoRandom();
+			Numero n= new Numero(nvalor);
+			int nvalor2= r.legajoRandom();
+			Numero n2= new Numero(nvalor2);
+			
+			Numero comparable1= new Numero(r.numeroRandom());
+			ClaveValor ClVconjunto= new ClaveValor(comparable1, n);
+			ClaveValor ClVconjunto2= new ClaveValor(a1, n2);
+			Console.WriteLine("nro sosIgual "+comparable1.sosIgual(n2));
+			Console.WriteLine("Clave valor 1 igual a 2? :"+ ClVconjunto.sosIgual(ClVconjunto2));
+			
+			//crear conjunto
+			
+			Conjunto conj= new Conjunto();
+			conj.agregar(ClVconjunto2);
+			Console.WriteLine("Cuantos conjuntos: "+ conj.cuantos());
+			conj.agregar(ClVconjunto);
+			//probar metodos
+			
+			
+			//crear diccionario
+			Diccionario dicc= new Diccionario();
+			dicc.agregar(comparable1, n);
+			dicc.agregar(a1, n2);
+			Console.WriteLine("\npruebo clave agregada");
+			dicc.agregar(comparable1,n2);
+			Console.WriteLine("\npruebo valorDe");
+			Numero nValorDe=dicc.valorDe(a1);
+			Console.WriteLine("el valor asociado es: "+ nValorDe.getValor);
 			
 			Console.Write("Press any key to continue . . . ");
 			Console.ReadKey(true);
@@ -89,22 +125,14 @@ namespace practica2
 			switch (c.minimo().GetType().ToString()) {
 				case "practica2.Numero":
 					Console.WriteLine("Valor Mínimo: "+((Numero)c.minimo()).getValor);
-					break;
-				case "practica2.Persona":
-					Console.WriteLine("Nombre Mínimo: "+((Persona)c.minimo()).getNombre);
-					break;
-				case "practica2.Alumno":
-					Console.WriteLine("Legajo Mínimo: "+((Alumno)c.minimo()).getLegajo);
-					break;
-			}
-			switch (c.maximo().GetType().ToString()) {
-				case "practica2.Numero":
 					Console.WriteLine("Valor Máximo: "+((Numero)c.maximo()).getValor);
 					break;
 				case "practica2.Persona":
+					Console.WriteLine("Nombre Mínimo: "+((Persona)c.minimo()).getNombre);
 					Console.WriteLine("Nombre Máximo: "+((Persona)c.maximo()).getNombre);
 					break;
 				case "practica2.Alumno":
+					Console.WriteLine("Legajo Mínimo: "+((Alumno)c.minimo()).getLegajo);
 					Console.WriteLine("Legajo Máximo: "+((Alumno)c.maximo()).getLegajo);
 					break;
 			}

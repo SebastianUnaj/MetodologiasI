@@ -17,7 +17,9 @@ namespace practica2
 		}
 		
 		public bool sosIgual(comparable C){
-			return this.valor==((Numero)C).valor;
+			if (C.GetType().ToString()=="practica2.Numero") {
+				return this.valor==((Numero)C).valor;
+			}else{return false;}
 		}
 		
 		public bool sosMenor(comparable C){
