@@ -36,5 +36,8 @@ namespace practica2
 		public bool sosMayor(comparable c){
 			return ((Persona)c).dni<this.getDni;
 		}
+		override public string ToString(){
+			return "" + nombre;
+		}
 	}
 }

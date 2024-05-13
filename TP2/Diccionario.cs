@@ -22,6 +22,7 @@ namespace practica2
 			this.conj = new Conjunto();
 		}
 		public void agregar(comparable clave, Numero valor){
+			Console.WriteLine("\nAgrego al diccionario");
 			foreach (ClaveValor el in conj.Lista) {
 				if (el.Clave.sosIgual(clave)) {
 					Console.WriteLine("La clave pertenece al diccionario");
@@ -37,7 +38,7 @@ namespace practica2
 			Numero o=new Numero(0);
 			if (this.cotiene(clave)) {
 				foreach (ClaveValor el in this.conj.Lista) {
-					if (((comparable)el.Clave).sosIgual(clave)) {
+					if ((el.Clave).sosIgual(clave)) {
 						Console.WriteLine("contiene, devuelvo valor asociado");
 						return el.Valor;
 					}
@@ -59,19 +60,26 @@ namespace practica2
 		}
 		
 		public void agregar(comparable a){
+			Console.WriteLine("\nAgrego al diccionario");
 			if (!this.cotiene(a)) {
 				this.conj.agregar(a);
 			}
 		}
-				
+			
 		public bool cotiene(comparable a){
 			foreach (ClaveValor el in conj.Lista) {
-				if (((comparable)el.Clave).sosIgual(a)) {
+				if ((el.Clave).sosIgual(a)) {
 					return true;
 				}
 			}
 			return false;
 		}//fin cotiene
+		
+		
+		public IteradorDePaginas crearIterador(){
+			return new IteradorDeList(conj.getLista);
+		}
+		
 		
 	}//fin class
 }//fin namespace

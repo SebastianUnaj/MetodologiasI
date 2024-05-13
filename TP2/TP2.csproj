@@ -57,7 +57,10 @@
     <Compile Include="Conjunto.cs" />
     <Compile Include="Diccionario.cs" />
     <Compile Include="Estrategias.cs" />
+    <Compile Include="IIterable.cs" />
+    <Compile Include="impresora.cs" />
     <Compile Include="IPersona.cs" />
+    <Compile Include="IteradorList.cs" />
     <Compile Include="Numero.cs" />
     <Compile Include="Persona.cs" />
     <Compile Include="Pila.cs" />

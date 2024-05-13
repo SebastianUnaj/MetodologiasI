@@ -3,7 +3,10 @@
 namespace practica2
 {
 	/// <summary>
-	/// Description of comparable.
+	/// comparable:
+	/// sosIgual(comparable c)
+	/// sosMenor(comparable c)
+	/// sosMayor(comparable c)
 	/// </summary>
 	public interface comparable
 	{

@@ -15,7 +15,6 @@ namespace practica2
 		public int getValor{
 			get{return valor;}
 		}
-		
 		public bool sosIgual(comparable C){
 			if (C.GetType().ToString()=="practica2.Numero") {
 				return this.valor==((Numero)C).valor;
@@ -28,6 +27,9 @@ namespace practica2
 		
 		public bool sosMayor(comparable C){
 			return this.valor>((Numero)C).valor;
+		}
+		override public string ToString(){
+			return "" + valor;
 		}
 	}
 }

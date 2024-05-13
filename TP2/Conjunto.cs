@@ -27,6 +27,9 @@ namespace practica2
 		public List<comparable> Lista{
 			get{return lista;}
 		}
+		public List<comparable> getLista{
+			get{return lista;}
+		}
 		
 		public int cuantos(){ return lista.Count;}
 		
@@ -71,6 +74,9 @@ namespace practica2
 				}
 			}
 			return contiene;
+		}
+		public IteradorDePaginas crearIterador(){
+			return new IteradorDeList(lista);
 		}
 	}
 }

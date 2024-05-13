@@ -16,7 +16,7 @@ namespace practica2
 		{
 			
 			Alumno a1= new Alumno("al"+1,23111222, 11222, 0.7);
-			/*
+			
 			Alumno a2= new Alumno("al"+1,3111222, 1222, 0.7);
 			
 			Console.WriteLine("Nombre DNI LEGAJO PROMEDIO:");
@@ -61,14 +61,15 @@ namespace practica2
 			Console.WriteLine("tipo coleccion multiple: "+ cM2.GetType().ToString());
 			informar(cM2);
 			
-			*/
+			
 			
 			//crear varias clave valor
 			Console.WriteLine("Ejercicio 4- Practica2");
 			RandomUnico r= new RandomUnico(unicoRandomGlobal);
 			int nvalor= r.legajoRandom();
 			Numero n= new Numero(nvalor);
-			int nvalor2= r.legajoRandom();
+			//int nvalor2= r.legajoRandom();
+			int nvalor2= 15123;
 			Numero n2= new Numero(nvalor2);
 			
 			Numero comparable1= new Numero(r.numeroRandom());
@@ -81,20 +82,43 @@ namespace practica2
 			
 			Conjunto conj= new Conjunto();
 			conj.agregar(ClVconjunto2);
-			Console.WriteLine("Cuantos conjuntos: "+ conj.cuantos());
 			conj.agregar(ClVconjunto);
 			//probar metodos
+			Console.WriteLine("cuantos "+conj.cuantos());
+			conj.minimo();
+			conj.maximo();
 			
 			
 			//crear diccionario
 			Diccionario dicc= new Diccionario();
 			dicc.agregar(comparable1, n);
+			Console.WriteLine("Agrego Clave: {0} valor: {1}",comparable1.getValor, n.getValor);
+			
 			dicc.agregar(a1, n2);
+			Console.WriteLine("Agrego Clave: {0} valor: {1}",a1.getNombre, n2.getValor);
+			
 			Console.WriteLine("\npruebo clave agregada");
 			dicc.agregar(comparable1,n2);
-			Console.WriteLine("\npruebo valorDe");
-			Numero nValorDe=dicc.valorDe(a1);
+			Console.WriteLine("Agrego Clave: {0} valor: {1}",comparable1.getValor, n2.getValor);
+			
+			Console.WriteLine("\npruebo valorDe {0}",comparable1.getValor);
+			Numero nValorDe=dicc.valorDe(comparable1);
 			Console.WriteLine("el valor asociado es: "+ nValorDe.getValor);
+			
+			Console.WriteLine("IMPRESORA");
+			impresora i= new impresora();
+			
+			Console.WriteLine("IMPRIMIR CONJUNTO");
+			i.imprimirElementos(conj);
+			
+			Console.WriteLine("IMPRIMIR PILA");
+			i.imprimirElementos(p2);
+			
+			Console.WriteLine("IMPRIMIR COLA");
+			i.imprimirElementos(col2);
+			
+			Console.WriteLine("IMPRIMIR DICCIONARIO");
+			i.imprimirElementos(dicc);
 			
 			Console.Write("Press any key to continue . . . ");
 			Console.ReadKey(true);

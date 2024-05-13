@@ -46,17 +46,19 @@ namespace practica2
 			//como saber si var == var
 			if (this.clave.GetType()==cl.Clave.GetType()) {
 				//Console.WriteLine("clave igual?"+ clave.sosIgual(cl.Clave));
-				igual=true;
+				igual= clave.sosIgual(cl.clave);
 			}
 			if (this.valor.GetType()==cl.Valor.GetType()) {
 				//Console.WriteLine("valor igual?"+ valor.sosIgual(cl.Valor));
-				igual=true;
+				igual= valor.sosIgual(cl.Valor);
 			}
 			return igual;
 		}
 		public bool sosMenor(comparable c){return false;}
 		public bool sosMayor(comparable c){return false;}
 		//agregar un metodo imprimir que muestre el tipo de la clave y del valor
-		
+		override public string ToString(){
+			return "" + clave.ToString();
+		}
 	}
 }

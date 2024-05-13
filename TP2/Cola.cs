@@ -81,6 +81,10 @@ namespace practica2
 			}
 			return false;
 		}
+		public IteradorDePaginas crearIterador(){
+			return new IteradorDeList(lista);
+		}
+		
 		
 		
 	}

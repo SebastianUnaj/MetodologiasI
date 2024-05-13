@@ -46,6 +46,9 @@ namespace practica2
 		public bool cotiene(comparable a){
 			return pCM.cotiene(a) || cCM.cotiene(a);
 		}
+		public IteradorDePaginas crearIterador(){
+			return new IteradorDeList(pCM.getLista);
+		}
 		
 	}
 }

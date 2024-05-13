@@ -83,7 +83,6 @@ namespace practica2
 			}
 			return igual;
 		}//fin sosIgual
-		
 		public bool soloMenor(comparable c){
 			bool menor=false;
 			Console.WriteLine("l:legajo o p:promedio");
@@ -116,6 +115,7 @@ namespace practica2
 			}
 			return mayor;
 		}//fin sosMayor
+		
 		public bool sosMenor(comparable c){
 			return comparar.sosMenor(c, this);
 		}//fin soloMenor
@@ -125,6 +125,8 @@ namespace practica2
 		public bool sosIgual(comparable c){
 			return comparar.sosIgual(c, this);
 		}//fin sosIgual
-		
+		override public string ToString(){
+			return "" + nombre;
+		}
 	}
 }
