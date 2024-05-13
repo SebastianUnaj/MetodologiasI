@@ -44,19 +44,19 @@ namespace practica2
 			switch (opcion) {
 				case "1":
 					comparar= new porLegajo();
-					Console.WriteLine("Compara por Legajo");
+					//Console.WriteLine("Compara por Legajo");
 					break;
 				case "2":
 					comparar= new porPromedio();
-					Console.WriteLine("Compara por Promedio");
+					//Console.WriteLine("Compara por Promedio");
 					break;
 				case "3":
 					comparar= new porDni();
-					Console.WriteLine("Compara por Dni");
+					//Console.WriteLine("Compara por Dni");
 					break;
 				case "4":
 					comparar= new porNombre();
-					Console.WriteLine("Compara por Nombre");
+					//Console.WriteLine("Compara por Nombre");
 					break;
 			}
 		}

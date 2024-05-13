@@ -19,37 +19,39 @@ namespace practica2
 			
 			Alumno a2= new Alumno("al"+1,3111222, 1222, 0.7);
 			
-			Console.WriteLine("Nombre DNI LEGAJO PROMEDIO:");
-			Console.WriteLine(a1.getNombre+" "+a1.getDni+" "+a1.getLegajo+" "+a1.getPromedio);
-			Console.WriteLine(a2.getNombre+" "+a2.getDni+" "+a2.getLegajo+" "+a2.getPromedio);
-			
-			Console.WriteLine("compara por legajo");
+			Console.WriteLine("Nombre \tDNI \t\tLEGAJO \tPROMEDIO:");
+			Console.WriteLine(a1.getNombre+" \t"+a1.getDni+" \t"+a1.getLegajo+" \t"+a1.getPromedio);
+			Console.WriteLine(a2.getNombre+" \t"+a2.getDni+" \t"+a2.getLegajo+" \t"+a2.getPromedio);
+			Console.WriteLine("\n__________________________________________________________");
+			Console.WriteLine("compara por legajo: 1ro contra 2do");
 			Console.WriteLine("\tSos igual: "+a1.sosIgual(a2));
 			Console.WriteLine("\tSos menor: "+a1.sosMenor(a2));
 			Console.WriteLine("\tSos mayor: "+a1.sosMayor(a2));
-			
+			Console.WriteLine("\n__________________________________________________________");
 			a1.cambiarComparar("2");
-			//Console.WriteLine("compara por Promedio");
+			Console.WriteLine("compara por Promedio: 1ro contra 2do");
 			Console.WriteLine("\tSos igual: "+a1.sosIgual(a2));
 			Console.WriteLine("\tSos menor: "+a1.sosMenor(a2));
 			Console.WriteLine("\tSos mayor: "+a1.sosMayor(a2));
-			
+			Console.WriteLine("\n__________________________________________________________");
 			a1.cambiarComparar("3");
-			//Console.WriteLine("compara por Dni");
+			Console.WriteLine("compara por Dni: 1ro contra 2do");
 			Console.WriteLine("\tSos igual: "+a1.sosIgual(a2));
 			Console.WriteLine("\tSos menor: "+a1.sosMenor(a2));
 			Console.WriteLine("\tSos mayor: "+a1.sosMayor(a2));
-			
+			Console.WriteLine("\n__________________________________________________________");
 			a1.cambiarComparar("4");
-			//Console.WriteLine("compara por Nombre");
+			Console.WriteLine("compara por Nombre: 1ro contra 2do");
 			Console.WriteLine("\tSos igual: "+a1.sosIgual(a2));
 			Console.WriteLine("\tSos menor: "+a1.sosMenor(a2));
 			Console.WriteLine("\tSos mayor: "+a1.sosMayor(a2));
-			
+			Console.Write("Press any key to continue . . . ");
+			Console.ReadKey(true);
+			Console.Clear();
 			//************EJERCICIO 2*****************
 			
 			//coleccion multiple de Alumnos
-			
+			Console.WriteLine("\n*********************************************************");
 			Pila p2= new Pila();
 			Cola col2=new Cola();
 			ColeccionMultiple cM2= new ColeccionMultiple(p2, col2);
@@ -60,11 +62,13 @@ namespace practica2
         	 //Console.WriteLine("   Namespace: {0}.", myType.Namespace);
 			Console.WriteLine("tipo coleccion multiple: "+ cM2.GetType().ToString());
 			informar(cM2);
-			
-			
+			Console.Write("Press any key to continue . . . ");
+			Console.ReadKey(true);
+			Console.Clear();
 			
 			//crear varias clave valor
-			Console.WriteLine("Ejercicio 4- Practica2");
+			Console.WriteLine("\n*********************************************************");
+			Console.WriteLine("CLAVE VALOR");
 			RandomUnico r= new RandomUnico(unicoRandomGlobal);
 			int nvalor= r.legajoRandom();
 			Numero n= new Numero(nvalor);
@@ -77,9 +81,13 @@ namespace practica2
 			ClaveValor ClVconjunto2= new ClaveValor(a1, n2);
 			Console.WriteLine("nro sosIgual "+comparable1.sosIgual(n2));
 			Console.WriteLine("Clave valor 1 igual a 2? :"+ ClVconjunto.sosIgual(ClVconjunto2));
+			Console.Write("Press any key to continue . . . ");
+			Console.ReadKey(true);
+			Console.Clear();
 			
 			//crear conjunto
-			
+			Console.WriteLine("\n*********************************************************");
+			Console.WriteLine("CREO CONJUNTO");
 			Conjunto conj= new Conjunto();
 			conj.agregar(ClVconjunto2);
 			conj.agregar(ClVconjunto);
@@ -87,9 +95,13 @@ namespace practica2
 			Console.WriteLine("cuantos "+conj.cuantos());
 			conj.minimo();
 			conj.maximo();
+			Console.Write("Press any key to continue . . . ");
+			Console.ReadKey(true);
+			Console.Clear();
 			
-			
+			Console.WriteLine("\n*********************************************************");
 			//crear diccionario
+			Console.WriteLine("CREO DICCIONARIO");
 			Diccionario dicc= new Diccionario();
 			dicc.agregar(comparable1, n);
 			Console.WriteLine("Agrego Clave: {0} valor: {1}",comparable1.getValor, n.getValor);
@@ -104,22 +116,51 @@ namespace practica2
 			Console.WriteLine("\npruebo valorDe {0}",comparable1.getValor);
 			Numero nValorDe=dicc.valorDe(comparable1);
 			Console.WriteLine("el valor asociado es: "+ nValorDe.getValor);
+			Console.Write("Press any key to continue . . . ");
+			Console.ReadKey(true);
+			Console.Clear();
 			
+			Console.WriteLine("\n*********************************************************");
 			Console.WriteLine("IMPRESORA");
 			impresora i= new impresora();
 			
 			Console.WriteLine("IMPRIMIR CONJUNTO");
 			i.imprimirElementos(conj);
-			
+			Console.Write("\nPress any key to continue . . . ");
+			Console.ReadKey(true);
+			Console.WriteLine("\n__________________________________________________________");
 			Console.WriteLine("IMPRIMIR PILA");
 			i.imprimirElementos(p2);
-			
+			Console.Write("\nPress any key to continue . . . ");
+			Console.ReadKey(true);
+			Console.WriteLine("\n__________________________________________________________");
 			Console.WriteLine("IMPRIMIR COLA");
 			i.imprimirElementos(col2);
-			
+			Console.Write("\nPress any key to continue . . . ");
+			Console.ReadKey(true);
+			Console.WriteLine("\n__________________________________________________________");
 			Console.WriteLine("IMPRIMIR DICCIONARIO");
 			i.imprimirElementos(dicc);
+			Console.Write("\nPress any key to continue . . . ");
+			Console.ReadKey(true);
+			Console.Write("Press any key to continue . . . ");
+			Console.ReadKey(true);
+			Console.Clear();
 			
+			Console.WriteLine("\n*********************************************************");
+			Console.WriteLine("9- CAMBIO DE ESTRATEGIA");
+			Console.WriteLine("cambio coleccionable solo con alumnos");
+			cambiarEstrategia(p2,"1");
+			Console.Write("\nPress any key to continue . . . ");
+			Console.ReadKey(true);
+			
+			Console.WriteLine("\n_________________________________________________________");
+			Console.WriteLine("cambio coleccionable sin alumnos");
+			Cola c3= new Cola();
+			llenarPersonas(c3);
+			cambiarEstrategia(c3,"3");
+			
+			Console.WriteLine("\n*********************************************************");
 			Console.Write("Press any key to continue . . . ");
 			Console.ReadKey(true);
 		}
@@ -209,5 +250,23 @@ namespace practica2
 				col.agregar(comp);
 			}
 		}//llenarAlumnos
+		
+		public static void cambiarEstrategia(coleccionable c, string i){
+			IteradorDePaginas ite = c.crearIterador();
+			Console.WriteLine("cambiando estrategia ");
+			while(! ite.fin()){
+				if (ite.actual().GetType().ToString()=="practica2.Alumno") {
+					((Alumno)ite.actual()).cambiarComparar(i);
+					Console.WriteLine("Se cambio la estrategia a: "+((Alumno)ite.actual()).getNombre);
+					ite.siguiente();
+				}else{
+					Console.WriteLine("No era alumno, no se pudo cambiar la estrategia");
+					ite.siguiente();
+				}
+				
+			}
+			
+		}
+		
 	}
 }
